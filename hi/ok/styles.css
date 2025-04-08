@@ -30,13 +30,13 @@ h3{
 
 body {
 	margin: 0;
-	background-color: #ffedbd;
+	background-color: #f0f0f0;
 }
 
 .container {
 	width: 60%;
 	margin: 0 auto;
-	background-color: white;
+	background-color: #ffedbd;
 	padding: 20px;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
