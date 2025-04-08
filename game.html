@@ -4,9 +4,34 @@
 	<title>game diary | marylou</title>
 	<link href="hi/ok/styles.css" rel="stylesheet" name="">
 	<link rel="shortcut icon" type="image/png" href="favicon.ico">
+	<style>
+	#backToTop {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	padding: 10px 25px;
+	font-size: 16px;
+	background-color: #abcdef;
+	color: black;
+	border: none;
+	border-radius: 0px;
+	cursor: pointer;
+	z-index: 1000;
+	}
+
+	#backToTop:hover {
+	background-color: #fedcba;
+	}
+	</style>
 	</head>
 		<body  background="145400-bigthumbnail.jpg">
 			<div class="container">
+				<button id="backToTop">↑ Top</button>
+				<script>
+				document.getElementById('backToTop').addEventListener('click', () => {
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+				});
+				</script>
 			
 					<a href="/">come back home......</a>
 					
