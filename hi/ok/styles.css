@@ -36,7 +36,7 @@ body {
 .container {
 	width: 60%;
 	margin: 0 auto;
-	background-color: white;
+	background-color: transparent;
 	padding: 20px;
 	box-shadow: 18px 7px 10px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
