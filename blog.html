@@ -107,7 +107,7 @@
 				<button id="backToTop">back to top...</button>
 				<script>
 				document.getElementById('backToTop').addEventListener('click', () => {
-				window.scrollTo({ top: 0, behavior: 'smooth' });
+				document.querySelector('.content').scrollTo({ top: 0, behavior: 'smooth' });
 				});
 				</script>
 			
