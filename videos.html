@@ -2,7 +2,6 @@
 <html>
 	<head>
 	<title>videos | marylou</title>
-	<link href="hi/ok/styles.css" rel="stylesheet" name="">
 	<link rel="shortcut icon" type="image/png" href="favicon.ico">
 	<style>
 	#backToTop {
@@ -11,39 +10,110 @@
 	right: 20px;
 	padding: 8px 8px;
 	font-size: 16px;
-	background-color: #012345;
-	color: white;
-	border: none;
+	background-color: #white;
+	color: black;
+	border: 1px solid;
 	border-radius: 0px;
 	cursor: pointer;
 	z-index: 1000;
 	}
-
+	
+	.sidenav {
+	    border-right: 1px dotted #8c8c8c;
+	    bottom: 0;
+	    width: 160px;
+	    padding: 10px;
+		padding-top: 20px;
+		height: 100%;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	}
+	
 	#backToTop:hover {
 	background-color: #fedcba;
 	color: black;
 	}
-	
+		
 	body {
-	  background-color: #f0f0f0;
+	  background-color: #ffffff;
 	  font-family: ms gothic;	
+	  margin: 0;
+	}
+	
+	.home {
+	padding: 5px;
+	border-bottom: 1px dotted #8c8c8c;
+	}
+	
+	.everythingelse {
+	padding-top: 15px;
+	}
+	
+	a {
+    display: block;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	}
+	
+	.container {
+	width: 70%;
+	    margin: 0 auto;
+	    background-color: white;
+	    overflow: hidden;
+	    position: absolute;
+	    top: 0;
+	    left: 200px;
+	    right: 0;
+	    bottom: 0;
+	    padding: 25px;
+	}
+
+	.content {
+	    height: 100%;
+	    overflow-y: auto;
+	}
+	
+	h2{
+	text-shadow: 1px 1px 1px #ffffff;
+	}
+
+	h3{
+	text-shadow: 0px 0px 3px #ffffff;
+	}
+	
+	img {
+	max-width: 100%;
+	height: auto;
+	}
+		@media (max-width: 768px) {
+	    .container {
+	        position: relative;
+	        right: 0;
+	        width: 100%;
+	        max-width: 100%; 
+	        padding: 15px; 
+	        overflow: auto;
+	    }
 	}
 	</style>
 	</head>
-		<body  background="hi/e11e4cc40f231b4c4b760bbb369cfb2ft.jpeg">
+		<body>
 			<div class="container">
-				<button id="backToTop">use this<br>button to go<br>back to the<br>top of<br>the page..<br>well.. if you<br>want to<br>of course..</button>
+				<div class="content">
+				<button id="backToTop">back to top...</button>
 				<script>
 				document.getElementById('backToTop').addEventListener('click', () => {
-				window.scrollTo({ top: 0, behavior: 'smooth' });
+				document.querySelector('.content').scrollTo({ top: 0, behavior: 'smooth' });
 				});
 				</script>
+			
 					
-					<a href="/">come back home......</a>
-					
-					<center>
-					
-					<h2><font color="#083c9e">COOL AND AWESOME VIDEOS</font></h2>
+					<h4><p>VIDEO RECOMMENDATIONS</p></h4>
 					<p>[Linked 12 April 2025] (Virtual Riot) cursed EQs</p>
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/gNhRXtBvkfs?si=V7WmME58y_IRw78H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					<br>
@@ -63,8 +133,13 @@
 					<iframe width="560" height="315" src="https://www.youtube.com/embed/_uK4ggodwl0?si=qFATl9D_wU4RI4Zw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 					<br>
 					
-					</center>
-					
+				<div class="sidenav">
+					<center><font>
+					<div class="home">
+					<a href="/">come back home......</a>
+					</div>
+					</font></center>
 				</div>
+			</div>
 		</body>
 </html>
