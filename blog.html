@@ -2,7 +2,6 @@
 <html>
 	<head>
 	<title>music | marylou</title>
-	<link href="hi/ok/styles.css" rel="stylesheet" name="">
 	<link rel="shortcut icon" type="image/png" href="favicon.ico">
 	<style>
 	#backToTop {
@@ -11,38 +10,101 @@
 	right: 20px;
 	padding: 8px 8px;
 	font-size: 16px;
-	background-color: #012345;
-	color: white;
-	border: none;
+	background-color: #white;
+	color: black;
+	border: 1px solid;
 	border-radius: 0px;
 	cursor: pointer;
 	z-index: 1000;
 	}
-
+	
+	.sidenav {
+	position: fixed;
+	    border-right: 1px dotted #8c8c8c;
+	    bottom: 0;
+	    width: 250px;
+	    padding: 10px;
+		padding-top: 20px;
+		height: 100%;
+	    width: 160px;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	}
+	
+	.sidenav-right {
+		height: 100%;
+		width: 160px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		overflow-x: hidden;
+		padding-top: 20px;
+	}
+	
 	#backToTop:hover {
 	background-color: #fedcba;
 	color: black;
 	}
-	
+		
 	body {
-	  background-color: #f0f0f0;
+	  background-color: #ffffff;
 	  font-family: ms gothic;	
+	  margin: 0;
+	}
+	
+	.home {
+	padding: 5px;
+	border-bottom: 1px dotted #8c8c8c;
+	}
+	
+	.everythingelse {
+	padding-top: 15px;
+	}
+	
+	a {
+    display: block;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+	}
+	
+	.container {
+	width: 40%;
+	margin: 0 auto;
+	background-color: white;
+	overflow: hidden;
+	}
+	
+	h2{
+	text-shadow: 1px 1px 1px #ffffff;
+	}
+
+	h3{
+		text-shadow: 0px 0px 3px #ffffff;
+	}
+	
+	img {
+	max-width: 100%;
+	height: auto;
 	}
 	</style>
 	</head>
-		<body  background="hi/e11e4cc40f231b4c4b760bbb369cfb2ft.jpeg">
+		<body>
 			<div class="container">
-				<button id="backToTop">use this<br>button to go<br>back to the<br>top of<br>the page..<br>well.. if you<br>want to<br>of course..</button>
+				<button id="backToTop">back to top...</button>
 				<script>
 				document.getElementById('backToTop').addEventListener('click', () => {
 				window.scrollTo({ top: 0, behavior: 'smooth' });
 				});
 				</script>
 			
-					<a href="/">come back home......</a>
 					
-					<center>
-					<h2><font color="#083c9e">MUSIC RECOMMENDATIONS</font></h2>
+					<h4><p><font color="#083c9e">MUSIC RECOMMENDATIONS</font></p></h4>
 
 					<p>[Recommended 22 April 2025] joe dalton - cell1 (SINGLE)</p>
 					<iframe width="75%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2029590768&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/greatprisonbreak" title="joe dalton" target="_blank" style="color: #cccccc; text-decoration: none;">joe dalton</a> · <a href="https://soundcloud.com/greatprisonbreak/cell1" title="⠀⠀⠀" target="_blank" style="color: #cccccc; text-decoration: none;">⠀⠀⠀</a></div>
@@ -76,8 +138,13 @@
 					<br>
 					<p>[Recommended 5 April 2025] The Birthday Massacre - Violet (ALBUM)</p>
 					<iframe style="border: 0; width: 350px; height: 470px;" src="https://bandcamp.com/EmbeddedPlayer/album=2251858692/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/" seamless><a href="https://thebirthdaymassacre.bandcamp.com/album/violet">Violet by The Birthday Massacre</a></iframe>
-					
-					</center>
+
+				<div class="sidenav">
+					<center><font>
+					<div class="home">
+					<a href="/">come back home......</a>
+					</div>
+					</font></center>
 				</div>
 		</body>
 </html>
