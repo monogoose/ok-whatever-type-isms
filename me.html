@@ -139,9 +139,15 @@
 				      "hi/Erik_Art.png",
 				    ];
 				
-				    const randomIndex = Math.floor(Math.random() * images.length);
-				    document.getElementById("randomImage").src = images[randomIndex];
-				  </script>
+				    let currentIndex = 0;
+
+				  function updateImage() {
+				    document.getElementById("randomImage").src = images[currentIndex];
+				    currentIndex = (currentIndex + 1) % images.length;  
+				  }
+				
+				  updateImage();
+				</script>
 				<a href="/">come back home......</a>
 				</center>
 				
