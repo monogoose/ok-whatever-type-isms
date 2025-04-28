@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>test</title>
+</head>
+<body>
+  <img id="randomImage" src="" alt="Random Image" width="400">
+
+  <script>
+    const images = [
+      "New folder\Noge_Art.png",
+      "ok\hylics.gif.gif",
+    ];
+
+    const randomIndex = Math.floor(Math.random() * images.length);
+    document.getElementById("randomImage").src = images[randomIndex];
+  </script>
+</body>
+</html>
