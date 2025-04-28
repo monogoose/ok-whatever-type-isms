@@ -128,7 +128,17 @@
 				</div>
 				<center>
 				<p style="font-size:60px; margin:1%">entries</p>
-				<img src="hi/Noge_Art.png" width="40px">
+				<img id="randomImage" src="" alt="Random Image" width="40px">
+
+				  <script>
+				    const images = [
+				      "hi/Noge_Art.png",
+				      "2hu.gif",
+				    ];
+				
+				    const randomIndex = Math.floor(Math.random() * images.length);
+				    document.getElementById("randomImage").src = images[randomIndex];
+				  </script>
 				<a href="/">come back home......</a>
 				</center>
 				
