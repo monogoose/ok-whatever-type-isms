@@ -34,11 +34,9 @@ body {
 }
 
 .container {
-	width: 60%;
+	width: 40%;
 	margin: 0 auto;
 	background-color: white;
-	padding: 20px;
-	box-shadow: 18px 7px 10px rgba(0, 0, 0, 0.1);
 	overflow: hidden;
 }
 
