@@ -62,7 +62,19 @@
 		</center>
 		<div class="page">
 		<center>
-				<img src="hi/AYlRWDq.gif">
+				<img src="">
+				<img id="randomImage" src="">
+	
+					  <script>
+					    const images = [
+					      "hi/AYlRWDq.gif",
+					      "hi/9102.gif",
+					      "hi/mzDY0CF.gif",
+					    ];
+					
+					    const randomIndex = Math.floor(Math.random() * images.length);
+					    document.getElementById("randomImage").src = images[randomIndex];
+					  </script>
 				</center>
 			<div class="container">
 			<center>
