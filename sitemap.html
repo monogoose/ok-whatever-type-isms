@@ -112,6 +112,15 @@
     margin-inline-end: 40px;
     unicode-bidi: isolate;
 	}
+	.dropdown-content {
+      display: none;
+    }
+	
+	 .dropdown {
+      cursor: pointer;
+      color: blue;
+      text-decoration: underline;
+    }
 	</style>
 	</head>
 		<div class="page">
@@ -127,6 +136,23 @@
   <blockquote><p>logging entries of my life</p></blockquote>
   <p><a href="videos.html">videos</a></p>
   <blockquote><p>videos from youtube (sometimes other platforms) that i find entertaining</p></blockquote>
+	<span class="dropdown" onclick="toggleDropdown(this)"><h3>...</h3></span>
+							<div class="dropdown-content">
+							<a href="videomonths/videos5to13may2025.html">5 may 2025 to 13 may 2025</a><br>
+							<a href="videomonths/videosapril2025.html">5 april 2025 to 28 april 2025</a>
+							</div>
+						</div>
+						<script>
+							function toggleDropdown(element) {
+							  const content = element.nextElementSibling;
+							  if (content.style.display === "block") {
+								content.style.display = "none";
+							  } else {
+								content.style.display = "block";
+							  }
+							}
+						</script>
+  <blockquote><blockquote></blockquote></blockquote>
   <p><a href="blog.html">music</a></p>
   <blockquote><p>music from various platforms that i enjoy and want to share</p></blockquote>
   <p><a href="game.html">games</a></p>
